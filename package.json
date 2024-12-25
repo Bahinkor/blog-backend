@@ -1,0 +1,35 @@
+{
+  "name": "blog-project",
+  "version": "1.0.0",
+  "description": "A blog project with express js and mysql db.",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --watch ./server.js",
+    "dev": "nodemon ./server.js"
+  },
+  "repository": "https://github.com/Bahinkor/blog-backend.git",
+  "author": "github.com/bahinkor",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "bcrypt": "5.1.1",
+    "cors": "2.8.5",
+    "express": "4.21.2",
+    "helmet": "8.0.0",
+    "joi": "17.13.3",
+    "jsonwebtoken": "9.0.2",
+    "multer": "1.4.5-lts.1",
+    "mysql2": "3.12.0",
+    "slugify": "1.6.6"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.17.0",
+    "@fullstacksjs/eslint-config": "11.5.0",
+    "dotenv": "16.4.7",
+    "dotenv-cli": "8.0.0",
+    "eslint": "9.17.0",
+    "nodemon": "3.1.9",
+    "typescript": "5.7.2"
+  }
+}
