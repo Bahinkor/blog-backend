@@ -5,8 +5,8 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "migrate": "dotenv -e .env node ./migrations/index.js",
-    "start": "dotenv -e .env node --watch ./server.js",
+    "migrate": "dotenv -e .env nodemon ./migrations/index.js",
+    "start": "dotenv -e .env node ./server.js --watch",
     "dev": "dotenv -e .env nodemon ./server.js"
   },
   "repository": "https://github.com/Bahinkor/blog-backend.git",
