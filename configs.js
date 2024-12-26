@@ -1,10 +1,7 @@
 const envConfig = {
   db: {
-    port: process.env.DB_PORT,
-    host: process.env.DB_HOST,
-    user: process.env.DB_USER,
-    password: process.env.DB_PASSWORD,
-    name: process.env.DB_NAME
+    uri: process.env.DB_URI,
+    poolSize: parseInt(process.env.DB_POOL_SIZE, 10) || 10
   },
 
   port: parseInt(process.env.PORT, 10) || 8000,
