@@ -5,8 +5,9 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "start": "node --watch ./server.js",
-    "dev": "nodemon ./server.js"
+    "migrate": "dotenv -e .env node ./migrations/index.js",
+    "start": "dotenv -e .env node --watch ./server.js",
+    "dev": "dotenv -e .env nodemon ./server.js"
   },
   "repository": "https://github.com/Bahinkor/blog-backend.git",
   "author": "github.com/bahinkor",
@@ -26,7 +27,6 @@
   "devDependencies": {
     "@eslint/js": "9.17.0",
     "@fullstacksjs/eslint-config": "11.5.0",
-    "dotenv": "16.4.7",
     "dotenv-cli": "8.0.0",
     "eslint": "9.17.0",
     "nodemon": "3.1.9",
